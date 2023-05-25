@@ -1,0 +1,11 @@
+---
+- name: Starting Ansible on localhost
+  hosts: localhost
+  gather_facts: yes
+  become: yes
+  become_method: sudo
+
+  roles:
+    - config-initial
+    - applications
+    - config-final
