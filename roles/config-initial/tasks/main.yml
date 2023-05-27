@@ -1,4 +1,5 @@
 - include_tasks: gather-facts.yml
 - include_tasks: apt-repository.yml
 - include_tasks: apt-dist-upgrade.yml
-- include_tasks: hid-config.yml
+- include_tasks: set-hid-config.yml
+- include_takts: apt-firmare.yml
