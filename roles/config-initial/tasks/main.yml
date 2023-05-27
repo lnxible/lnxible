@@ -1,2 +1,2 @@
-- include_tasks: 0000-apt-repository.yml
-- include_tasks: 0010-dist-upgrade.yml
+- include_tasks: apt-repository.yml
+- include_tasks: apt-dist-upgrade.yml

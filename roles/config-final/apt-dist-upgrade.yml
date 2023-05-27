@@ -1,4 +1,4 @@
-- name: 0010-dist-upgrade
+- name: apt-dist-upgrade
   ansible.builtin.apt:
     upgrade: dist
     update_cache: yes

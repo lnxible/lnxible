@@ -1,0 +1,18 @@
+- name: Print all available facts
+  ansible.builtin.debug:
+    var: ansible_facts
+
+- name: Print machine brand and type
+  vars:
+    msg: |
+      Machine brand : {{ ansible_facts['system_vendor'] }}
+      Machine type  : {{ ansible_facts['product_name'] }}
+  debug:
+    msg: "{{ msg.split('\n') }}"
+
+# - name: Based on machine brand and type
+#   debug:
+#     msg: "only when machine brand - type is ; Apple Inc. - MacBookAir4,2"
+#   when: |
+#     ansible_facts['system_vendor'] == "Apple Inc." and
+#     ansible_facts['product_name'] == "MacBookAir4,2"
