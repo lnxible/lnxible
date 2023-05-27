@@ -9,7 +9,7 @@
 
 - name:  Add TransIP Stack Client repository
   ansible.builtin.apt_repository:
-    repo: deb [arch=amd64 signed-by=/usr/share/keyrings/transip-stack.gpg] https://filehosting-client.transip.nl/packages/stack-debian-11/
+    repo: deb [arch=amd64 signed-by=/usr/share/keyrings/transip-stack.gpg] https://filehosting-client.transip.nl/packages/stack-debian-11/ ./
     state: present
     filename: stack-client-list
 
