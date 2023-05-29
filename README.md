@@ -1,6 +1,6 @@
-# lnxible
+# lnxible - Local Node eXecution using Ansible.
 
-Automating the post-provisioning installation of a Linux workstation
+Automating the post-provisioning installation of a workstation.
 
 ## Prerequisites
 
@@ -21,7 +21,10 @@ Automating the post-provisioning installation of a Linux workstation
 
 | Name | Brand | Type |
 | --- | --- | --- |
+| debian12.lab.home | QEMU | Standard PC (Q35 + ICH9, 2009) |
 | bookworm.lab.corp | VMware, Inc.| VMware Virtual Platform |
 | desktop.lab.corp | Acer | Aspire M7811 |
 | a1369.lab.home | Apple Inc. | MacBookAir4,2 |
 | xps7590.lab.home | Dell Inc. | XPS 15 7590 |
+| e6420.lab.home | Dell Inc. | Latitude E-6420 |
+| e6430.lab.home | Dell Inc. | Latitude E-6430 |
