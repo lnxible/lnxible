@@ -1,10 +1,12 @@
-# - name: Print all available facts
-#   ansible.builtin.debug:
-#     var: ansible_facts
+- name: Print all available facts
+  ansible.builtin.debug:
+    var: ansible_facts
 
 - name: Print machine brand and type
   vars:
     msg: |
+      OS system : {{ ansible_facts['system'] }}
+      OS family : {{ ansible_facts['os_family'] }}
       Machine brand : {{ ansible_facts['system_vendor'] }}
       Machine type  : {{ ansible_facts['product_name'] }}
   debug:
