@@ -1,1 +1,2 @@
 - include_tasks: apt-dist-upgrade.yml
+- include_tasks: disable-wayland.yml

@@ -1,0 +1,6 @@
+- name: Disable Wayland
+  become: true
+  ansible.builtin.lineinfile:
+    path: /etc/gdm3/daemon.conf
+    regexp: '#WaylandEnable=false'
+    line: 'WaylandEnable=false'
