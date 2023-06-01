@@ -1,13 +1,13 @@
-- name: Print all available facts
-  ansible.builtin.debug:
-    var: ansible_facts
+# - name: Print all available facts
+#   ansible.builtin.debug:
+#     var: ansible_facts
 
-- name: Print machine brand and type
+- name: Print machine brand, and OS details
   vars:
-    msg: |
+    machine_details: |
       OS system : {{ ansible_facts['system'] }}
-      OS family : {{ ansible_facts['os_family'] }}
+      OS distro : {{ ansible_facts['distribution_file_variety'] }} {{ ansible_facts['distribution_major_version'] }}.{{ ansible_facts['distribution_minor_version'] }} - {{ ansible_facts['distribution_release'] }}
       Machine brand : {{ ansible_facts['system_vendor'] }}
       Machine type  : {{ ansible_facts['product_name'] }}
   debug:
-    msg: "{{ msg.split('\n') }}"
+    msg: "{{ machine_details.split('\n') }}"
