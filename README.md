@@ -16,6 +16,8 @@ Automating the post-provisioning installation of a workstation.
 `sudo apt install -y ansible`
 #### Create symbolic link to Python3 
 `sudo ln -s /usr/bin/python3 /usr/bin/python`
+#### Install community collections
+`ansible-galaxy collection install community.general`
 
 ## Machines
 
