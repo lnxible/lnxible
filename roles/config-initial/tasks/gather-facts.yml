@@ -5,9 +5,9 @@
 - name: Print machine brand, and OS details
   vars:
     machine_details: |
-      OS system : {{ ansible_facts['system'] }}
-      OS distro : {{ ansible_facts['distribution_file_variety'] }} {{ ansible_facts['distribution_major_version'] }}.{{ ansible_facts['distribution_minor_version'] }} - {{ ansible_facts['distribution_release'] }}
-      Machine brand : {{ ansible_facts['system_vendor'] }}
-      Machine type  : {{ ansible_facts['product_name'] }}
+      OS system           : {{ ansible_facts['system'] }}
+      OS distribution     : {{ ansible_facts['distribution_file_variety'] }} {{ ansible_facts['distribution_major_version'] }}.{{ ansible_facts['distribution_minor_version'] }} - {{ ansible_facts['distribution_release'] }}
+      System vendor       : {{ ansible_facts['system_vendor'] }}
+      Product name        : {{ ansible_facts['product_name'] }}
   debug:
     msg: "{{ machine_details.split('\n') }}"
