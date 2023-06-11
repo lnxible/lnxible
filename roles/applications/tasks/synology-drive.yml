@@ -1,0 +1,4 @@
+- name: synology-drive
+  community.general.flatpak:
+    name: com.synology.SynologyDrive
+    state: present

@@ -1,0 +1,6 @@
+- name: drawio
+  community.general.snap:
+    name:
+      - drawio
+    state: present
+

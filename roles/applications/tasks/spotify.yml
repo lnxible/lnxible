@@ -1,0 +1,6 @@
+- name: spotify
+  community.general.snap:
+    name:
+      - spotify
+    state: present
+

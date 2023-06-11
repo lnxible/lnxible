@@ -1,0 +1,6 @@
+- name: fsuse
+  community.general.snap:
+    name:
+      - fsuae
+    state: present
+

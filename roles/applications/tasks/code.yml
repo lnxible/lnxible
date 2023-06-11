@@ -1,0 +1,7 @@
+- name: code
+  community.general.snap:
+    name:
+      - code
+    classic: true
+    state: present
+

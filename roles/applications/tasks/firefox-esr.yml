@@ -1,0 +1,8 @@
+- name: apt-firefox-esr
+  ansible.builtin.apt:
+    pkg:
+      - firefox-esr
+    autoremove: yes
+    update_cache: yes
+    cache_valid_time: 3600
+    state: present

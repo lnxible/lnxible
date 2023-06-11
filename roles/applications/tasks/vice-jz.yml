@@ -1,0 +1,6 @@
+- name: vice-jz
+  community.general.snap:
+    name:
+      - vice-jz
+    state: present
+

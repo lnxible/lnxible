@@ -1,0 +1,6 @@
+- name: rpi-imager
+  community.general.snap:
+    name:
+      - rpi-imager
+    state: present
+

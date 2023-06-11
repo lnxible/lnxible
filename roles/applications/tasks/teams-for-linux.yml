@@ -1,0 +1,6 @@
+- name: teams-for-linux
+  community.general.snap:
+    name:
+      - teams-for-linux
+    state: present
+

@@ -1,0 +1,8 @@
+- name: apt-ksnip
+  ansible.builtin.apt:
+    pkg:
+      - ksnip
+    autoremove: yes
+    update_cache: yes
+    cache_valid_time: 3600
+    state: present
