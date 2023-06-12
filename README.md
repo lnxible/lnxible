@@ -4,7 +4,7 @@ Automating the post-provisioning installation of a workstation.
 
 ## Prerequisites
 
-### Grant user sudo-rights
+### Grant SUDO rights to current user
 
 `su root`
 
