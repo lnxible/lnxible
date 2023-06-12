@@ -7,16 +7,23 @@ Automating the post-provisioning installation of a workstation.
 ### Grant user sudo-rights
 
 `su root`
+
 `/usr/sbin/usermod -aG sudo $USER`
+
 `/usr/sbin/reboot`
 
 ### Install ansible from repo
 
 #### Install Ansible
+
 `sudo apt install -y ansible`
+
 #### Create symbolic link to Python3 
+
 `sudo ln -s /usr/bin/python3 /usr/bin/python`
+
 #### Install community collections
+
 `ansible-galaxy collection install community.general`
 
 ## Machines
