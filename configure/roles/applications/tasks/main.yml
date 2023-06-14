@@ -1,3 +1,39 @@
-- include_tasks: apt-gnome-games.yml
-- include_tasks: apt-neofetch.yml
-- include_tasks: apt-stack-client.yml
+- include_tasks: gnome-games.yml
+- include_tasks: neofetch.yml
+- include_tasks: stack-client.yml
+- include_tasks: openssh-server.yml
+- include_tasks: xrdp.yml
+- include_tasks: ksnip.yml
+- include_tasks: git.yml
+- include_tasks: inxi.yml
+- include_tasks: vpn-l2tp.yml
+- include_tasks: hplip.yml
+- include_tasks: firefox-esr.yml
+- include_tasks: evolution.yml
+- include_tasks: telegram-desktop.yml
+- include_tasks: gimp.yml
+- include_tasks: vlc.yml
+- include_tasks: obs-studio.yml
+- include_tasks: remmina.yml
+- include_tasks: qemu.yml
+
+- include_tasks: snapd.yml
+- include_tasks: bitwarden.yml
+- include_tasks: prospect-mail.yml
+- include_tasks: whatsapp-for-linux.yml
+- include_tasks: gh.yml
+- include_tasks: code.yml
+- include_tasks: teams-for-linux.yml
+- include_tasks: drawio.yml
+- include_tasks: spotify.yml
+- include_tasks: rpi-imager.yml
+- include_tasks: fsuae.yml
+- include_tasks: vice-jz.yml
+- include_tasks: zerotier.yml
+- include_tasks: discord.yml
+
+- include_tasks: flatpak.yml
+- include_tasks: github-desktop.yml
+- include_tasks: synology-assistant.yml
+- include_tasks: synology-drive.yml
+

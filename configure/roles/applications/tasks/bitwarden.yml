@@ -1,0 +1,7 @@
+- name: bitwarden
+  community.general.snap:
+    name:
+      - bitwarden
+      - bw
+    state: present
+

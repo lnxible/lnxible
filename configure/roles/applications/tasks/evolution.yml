@@ -1,0 +1,9 @@
+- name: apt-evolution
+  ansible.builtin.apt:
+    pkg:
+      - evolution
+      - evolution-ews
+    autoremove: yes
+    update_cache: yes
+    cache_valid_time: 3600
+    state: present

@@ -1,0 +1,6 @@
+- name: zerotier
+  community.general.snap:
+    name:
+      - zerotier
+    state: present
+

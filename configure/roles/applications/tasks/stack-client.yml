@@ -1,0 +1,22 @@
+# Installing:
+#   stack-client  - TransIP Stack desktop sync client
+
+- name: Download TransIP Stack Client PGP key
+  ansible.builtin.get_url:
+    url: https://filehosting-client.transip.nl/transip-stack.gpg
+    dest: /usr/share/keyrings/transip-stack.gpg
+    # mode: '0440'
+
+- name:  Add TransIP Stack Client repository
+  ansible.builtin.apt_repository:
+    repo: deb [arch=amd64 signed-by=/usr/share/keyrings/transip-stack.gpg] https://filehosting-client.transip.nl/packages/stack-debian-11/ ./
+    state: present
+    filename: stack-client-list
+
+- name: apt-stack-client
+  ansible.builtin.apt:
+    pkg:
+      - stack-client
+    update_cache: yes
+    cache_valid_time: 3600
+    state: present

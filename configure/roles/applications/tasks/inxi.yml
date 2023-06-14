@@ -1,0 +1,8 @@
+- name: apt-inxi
+  ansible.builtin.apt:
+    pkg:
+      - inxi
+    autoremove: yes
+    update_cache: yes
+    cache_valid_time: 3600
+    state: present

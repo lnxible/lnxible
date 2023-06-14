@@ -1,0 +1,6 @@
+- name: gh
+  community.general.snap:
+    name:
+      - gh
+    state: present
+

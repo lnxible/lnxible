@@ -1,0 +1,6 @@
+- name: discord
+  community.general.snap:
+    name:
+      - discord
+    state: present
+

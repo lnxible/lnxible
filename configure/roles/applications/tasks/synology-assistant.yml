@@ -1,0 +1,4 @@
+- name: synology-assistant
+  community.general.flatpak:
+    name: com.synology.SynologyAssistant
+    state: present

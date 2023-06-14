@@ -1,0 +1,6 @@
+- name: prospect-mail
+  community.general.snap:
+    name:
+      - prospect-mail
+    state: present
+

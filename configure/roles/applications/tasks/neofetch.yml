@@ -1,0 +1,11 @@
+# Installing:
+#   neofetch  - system info
+#   lolcat    - colorful `cat`
+- name: apt-neofetch
+  ansible.builtin.apt:
+    pkg:
+      - neofetch
+      - lolcat
+    update_cache: yes
+    cache_valid_time: 3600
+    state: present
